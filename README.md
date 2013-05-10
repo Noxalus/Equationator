@@ -3,13 +3,13 @@ Equationator
 
 A thing for taking a math equation as a text string, parsing it, and getting a result.
 
--supports addition subtraction multiplication division
--supports PEMDAS order of operations: parans, multiplication, division, addition, subtraction
--can take up to nine params designated by $1 -$9
--also supports functions, where the footprint is:
-	name must be four letters
-	take zero parameters
-	return a float
+* supports addition subtraction multiplication division
+* supports PEMDAS order of operations: parans, multiplication, division, addition, subtraction
+* can take up to nine params designated by $1 -$9
+* also supports functions, where the footprint is:
+ * name must be four letters
+ * take zero parameters
+ * return a float
 
 functions are registered by passing in a text string that will call the function, and a delegate that will be called when that string is encountered in the equation.
 for example might register a function "rand" with a delegate that returns a random floating point number between 0.0-1.0.  This function can then be called by inserting "$rand" in an equation
